@@ -33,8 +33,8 @@ function init() {
   scene.fog = new THREE.Fog(scene.background, 3500, 15000);
 
   // 座標軸を表示
-  var axes = new THREE.AxisHelper(250);
-  scene.add(axes); //x 軸は赤, y 軸は緑, z 軸は青
+  // var axes = new THREE.AxisHelper(250);
+  // scene.add(axes); //x 軸は赤, y 軸は緑, z 軸は青
   // world
   const size = 250;
 
@@ -66,7 +66,7 @@ function init() {
   }
 
   //平行光線
-  const dirLight = new THREE.DirectionalLight(0xffffff, 0.35);
+  const dirLight = new THREE.DirectionalLight(0xffffff, 0.03);
   dirLight.position.set(0, -1, 0).normalize(); //Y軸下方向から光源が出てる。
   dirLight.color.setHSL(0.1, 0.7, 0.5);
   scene.add(dirLight);
@@ -110,7 +110,7 @@ function init() {
 
   controls.movementSpeed = 2500;
   controls.domElement = container;
-  controls.rollSpeed = Math.PI / 6;
+  controls.rollSpeed = Math.PI / 20;
   controls.autoForward = false;
   controls.dragToLook = false;
 
