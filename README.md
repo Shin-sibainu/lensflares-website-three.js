@@ -1,1 +1,1 @@
-# lensflares-website-three.js
+# Three.js-LensFlare-tutorial
