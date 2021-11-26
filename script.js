@@ -32,7 +32,7 @@ function init() {
   scene.background = new THREE.Color().setHSL(0.51, 0.4, 0.01); //h,s,l = 「色相(Hue)」「彩度(Saturation)」「輝度（Lightness)」
   scene.fog = new THREE.Fog(scene.background, 3500, 15000);
 
-  // 座標軸を表示
+  // // 座標軸を表示
   // var axes = new THREE.AxisHelper(250);
   // scene.add(axes); //x 軸は赤, y 軸は緑, z 軸は青
   // world
